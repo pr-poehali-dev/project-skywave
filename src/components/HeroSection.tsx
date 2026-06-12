@@ -8,16 +8,16 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-j46TPXDHzpn3M65wMva3qHPNhwokYn.png",
-      alt: "Группа бегунов в движении",
+      image: "https://cdn.poehali.dev/projects/03d7716a-3301-4f8a-8434-cd5be43d8e71/files/70d35895-0448-467d-b563-34d57f19196e.jpg",
+      alt: "Йога-практика в утренних лучах",
     },
     {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oH2K0gw1HEqvYhhbwJrYbmkBrbksyk.png",
-      alt: "Бегунья с эффектом размытия",
+      alt: "Медитация и гармония",
     },
     {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQ2brNc5Vszxllx17YNA6JqGqiHaRm.png",
-      alt: "Бегун во главе группы",
+      alt: "Сила и баланс",
     },
   ]
 
@@ -57,7 +57,7 @@ export default function HeroSection() {
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
         {/* Logo/Brand */}
-        <div className="text-white font-bold text-xl tracking-wider">STRIDE</div>
+        <div className="text-white font-bold text-xl tracking-wider">ДЫШИ И ВЛАСТВУЙ</div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
@@ -105,13 +105,13 @@ export default function HeroSection() {
         <div className="text-center text-white max-w-4xl">
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">
-            STRIDE
+            ДЫШИ
             <br />
-            COLLECTIVE
+            И ВЛАСТВУЙ
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">Беговое сообщество</p>
+          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">Йога-клуб · Тело. Дыхание. Сила.</p>
 
           {/* CTA Button - Now using LiquidButton */}
           <LiquidButton
@@ -119,7 +119,7 @@ export default function HeroSection() {
             className="font-semibold text-lg tracking-wide"
             onClick={() => scrollToSection("#join")}
           >
-            Присоединиться
+            Начать практику
           </LiquidButton>
         </div>
       </div>
