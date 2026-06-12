@@ -6,54 +6,52 @@ import { motion } from "framer-motion"
 import SmoothScrollHero from "@/components/ui/smooth-scroll-hero"
 
 export default function Index() {
-  const missionStatement =
-    "В «Дыши и Властвуй» мы верим: каждый вдох — это выбор, каждый выдох — освобождение. Рождённые из любви к осознанному движению, мы объединяем людей, которых связывает стремление к гармонии тела и разума. Пришёл ли ты за гибкостью, внутренним покоем или силой — мы здесь, чтобы помочь тебе раскрыться. Наше сообщество живёт ритмом дыхания, глубиной практики и радостью общих открытий. Присоединяйся — практикуй не только ради формы, но ради свободы, осознанности и чистой любви к себе."
+  const aboutStatement =
+    "Меня зовут Олег, и я только начинаю свой путь в программировании. Каждый день — это новая задача, новый баг, новое открытие. Я верю, что любой сложный код когда-то казался кому-то невозможным — и всё же был написан. Я здесь, чтобы учиться, расти и однажды создавать вещи, которые будут важны людям. Это не просто карьера — это образ мышления, который меняет тебя каждый день."
 
   const timelineEntries = [
     {
       id: 1,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RJ3iTXUn5SUexF6nHMZYhMoQLNCboK.png",
-      alt: "Первые шаги в йоге",
-      title: "Каждый вдох важен",
+      alt: "Первые шаги в программировании",
+      title: "С чего всё началось",
       description:
-        "От первого занятия на коврике до уверенной стойки на руках — у каждого практика своя история. В «Дыши и Властвуй» мы принимаем новичков, которые только делают первые шаги. Твой уровень не важен — важно твоё желание расти. Чего ты ждёшь?",
+        "Первая строчка кода — и что-то щёлкнуло. Я понял, что это не просто набор символов, это язык, на котором можно говорить с машиной. Страшно, непонятно, но невероятно интересно. С этого момента я не мог остановиться.",
       layout: "left" as const,
     },
     {
       id: 2,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LN9OPh9hw0b9rwSPRSslHoejcfoKHe.png",
-      alt: "Глубокая йога-практика",
-      title: "Найди своё равновесие",
+      alt: "Учёба и практика",
+      title: "Учусь каждый день",
       description:
-        "Ищешь гибкость, спокойствие или силу — наше сообщество принимает каждого. От начинающих до опытных практиков, от хатха до виньясы — здесь найдётся место именно для тебя. Вопрос один: чего ты ждёшь?",
+        "Курсы, статьи, YouTube в 2 часа ночи, баги которые не фиксятся часами — это и есть моя реальность. Каждая решённая задача — маленькая победа. Каждый новый проект — шаг вперёд. Прогресс не всегда виден сразу, но он есть.",
       layout: "right" as const,
     },
     {
       id: 3,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1FdGyjVpWQANGzsDWpoPIvF5SVI2za.png",
-      alt: "Сообщество йоги",
-      title: "Стань частью практики",
+      alt: "Цели и будущее",
+      title: "Куда иду",
       description:
-        "Йога — это не только асаны, это моменты. Утренние медитации, совместные открытия, коллективный рост. В «Дыши и Властвуй» ты вступаешь не просто в клуб — ты становишься частью семьи. Расстели коврик и открой, на что ты способен. Серьёзно, чего ты ждёшь?",
+        "Я хочу создавать продукты, которые решают реальные проблемы. Пока учусь основам — но уже думаю о первом коммерческом проекте. Программирование открыло мне новый способ смотреть на мир: любую задачу можно разложить на шаги и решить.",
       layout: "left" as const,
     },
   ]
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
       <HeroSection />
 
-      {/* Mission Statement Section with Grid Background */}
+      {/* About Section */}
       <section id="mission" className="relative min-h-screen flex items-center justify-center py-20 bg-white">
-        {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">НАША ФИЛОСОФИЯ</h2>
+            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">КТО Я</h2>
             <TextGradientScroll
-              text={missionStatement}
+              text={aboutStatement}
               className="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-gray-800"
               type="word"
               textOpacity="soft"
@@ -62,17 +60,16 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Journey Timeline */}
       <section id="community" className="relative py-20 bg-white">
-        {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
 
         <div className="relative z-10">
           <div className="container mx-auto px-6 mb-16">
             <div className="text-center">
-              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">МЕСТО ДЛЯ КАЖДОГО</h2>
+              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">МОЙ ПУТЬ</h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-                У каждого практика свой путь. Вот лишь несколько историй из нашего открытого сообщества.
+                Честная история о том, как я иду от нуля к первому проекту.
               </p>
             </div>
           </div>
@@ -83,7 +80,6 @@ export default function Index() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="relative py-20 bg-white">
-        {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
@@ -95,11 +91,11 @@ export default function Index() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-6xl font-black tracking-wider text-gray-900 mb-6">
-              Что говорят наши{" "}
-              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">ПРАКТИКИ</span>
+              Что говорят{" "}
+              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">ОБО МНЕ</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-              Реальные истории от людей, которые нашли гармонию и силу вместе с «Дыши и Властвуй».
+              Отзывы людей, с которыми я учился, работал и общался в процессе роста.
             </p>
           </motion.div>
 
@@ -107,12 +103,12 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Smooth Scroll Hero with CTA Overlay */}
+      {/* CTA Section */}
       <section id="join" className="relative">
         <SmoothScrollHero
           scrollHeight={2500}
-          desktopImage="/images/runners-motion-blur.png"
-          mobileImage="/images/runners-motion-blur.png"
+          desktopImage="https://cdn.poehali.dev/projects/03d7716a-3301-4f8a-8434-cd5be43d8e71/files/0d460179-73ee-4b44-9bd8-ee35ccaeb6dd.jpg"
+          mobileImage="https://cdn.poehali.dev/projects/03d7716a-3301-4f8a-8434-cd5be43d8e71/files/0d460179-73ee-4b44-9bd8-ee35ccaeb6dd.jpg"
           initialClipPercentage={30}
           finalClipPercentage={70}
         />

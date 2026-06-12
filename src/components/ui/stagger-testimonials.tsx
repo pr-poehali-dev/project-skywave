@@ -5,147 +5,147 @@ import { cn } from "@/lib/utils"
 
 const SQRT_5000 = Math.sqrt(5000)
 
-// Yoga club testimonials data
+// Portfolio testimonials data
 const testimonials = [
   {
     tempId: 0,
     testimonial:
-      "«Дыши и Властвуй» изменил мою жизнь. От неловкого новичка до уверенной практики каждый день — это сообщество верило в меня, когда я сама в себя не верила.",
-    by: "Сергей Иванов, практикует хатха-йогу",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SergeyIvanov&backgroundColor=3b82f6&textColor=ffffff",
+      "Олег — один из самых упорных людей на курсе. Когда все сдавались на сложной задаче, он продолжал разбираться, пока не понял до конца.",
+    by: "Артём, однокурсник",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Artem&backgroundColor=3b82f6&textColor=ffffff",
   },
   {
     tempId: 1,
     testimonial:
-      "Я боялась приходить на групповые занятия, но клуб встретил меня с теплом. Теперь у меня друзья и внутренний покой, который я искала годами.",
-    by: "Марина Петрова, виньяса-йога",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MarinaPetrova&backgroundColor=10b981&textColor=ffffff",
+      "Он задаёт правильные вопросы. Не «дай ответ», а «объясни, почему». Это редкость среди новичков и признак того, что человек действительно растёт.",
+    by: "Марина, ментор на онлайн-курсе",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Marina&backgroundColor=10b981&textColor=ffffff",
   },
   {
     tempId: 2,
     testimonial:
-      "Атмосфера на занятиях заряжает. Новичок ты или опытный практик — все поддерживают друг друга. Здесь нет конкуренции, здесь есть единство.",
-    by: "Анна Козлова, медитация и йога",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AnnaKozlova&backgroundColor=8b5cf6&textColor=ffffff",
+      "Мы вместе делали учебный проект. Олег взял на себя самую сложную часть и не сдался, даже когда пришлось переписать всё с нуля.",
+    by: "Дима, партнёр по учёбе",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Dima&backgroundColor=8b5cf6&textColor=ffffff",
   },
   {
     tempId: 3,
     testimonial:
-      "После лет домашних практик «Дыши и Властвуй» стал для меня открытием. Групповая энергия помогла выйти на уровень, о котором я и мечтать не мог.",
-    by: "Дмитрий Смирнов, аштанга-йога",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DmitrySmirnov&backgroundColor=ef4444&textColor=ffffff",
+      "Таких целеустремлённых студентов мало. Олег учится не ради галочки — он реально хочет понять, как всё устроено под капотом.",
+    by: "Алексей, преподаватель",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Aleksey&backgroundColor=ef4444&textColor=ffffff",
   },
   {
     tempId: 4,
     testimonial:
-      "Клуб научил меня, что йога — это не растяжка. Это терапия, дружба и путешествие внутрь себя. Эти занятия спасли моё ментальное здоровье.",
-    by: "Елена Новикова, осознанная практика",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=ElenaNovikova&backgroundColor=f59e0b&textColor=ffffff",
+      "Мне нравится его подход: сначала попробовать самому, потом спросить. Он уважает чужое время и умеет формулировать проблему чётко.",
+    by: "Катя, участница учебного чата",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Katya&backgroundColor=f59e0b&textColor=ffffff",
   },
   {
     tempId: 5,
     testimonial:
-      "От нулевого уровня до уверенных балансов за полгода с поддержкой клуба. Они принимают тебя таким, какой ты есть. Настоящая магия.",
-    by: "Алексей Морозов, история трансформации",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexeyMorozov&backgroundColor=6366f1&textColor=ffffff",
+      "Олег — тот, кто не стесняется начинать с нуля. Видел, как он за неделю разобрал тему, в которой неделю назад не понимал вообще ничего.",
+    by: "Игорь, сосед по коворкингу",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Igor&backgroundColor=6366f1&textColor=ffffff",
   },
   {
     tempId: 6,
     testimonial:
-      "Утренние занятия в «Дыши и Властвуй» — это духовный опыт. Есть что-то мощное в том, чтобы дышать и двигаться вместе с людьми, пока просыпается город.",
-    by: "Айгуль Рахимова, утренняя практика",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AigulRahimova&backgroundColor=ec4899&textColor=ffffff",
+      "Он объяснял мне вещи, которые сам только недавно выучил — и делал это понятно. Умение объяснять — признак настоящего понимания.",
+    by: "Света, однокурсница",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Sveta&backgroundColor=ec4899&textColor=ffffff",
   },
   {
     tempId: 7,
     testimonial:
-      "Пришла в клуб после переезда в новый город. Нашла не только йогу, но и настоящих друзей. Практика здесь — это образ жизни.",
-    by: "Ольга Ким, строитель сообщества",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=OlgaKim&backgroundColor=06b6d4&textColor=ffffff",
+      "Знаю Олега как человека, который не ищет лёгких путей. Он мог бы скопировать решение, но всегда выбирает разобраться сам.",
+    by: "Антон, друг",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Anton&backgroundColor=06b6d4&textColor=ffffff",
   },
   {
     tempId: 8,
     testimonial:
-      "Клуб радуется каждому прогрессу, даже самому маленькому. Моя первая правильная поза ощущалась как победа, когда за тебя болеет вся группа.",
-    by: "Наталья Соколова, первые шаги в йоге",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NataliyaSokolova&backgroundColor=f97316&textColor=ffffff",
+      "На нашем хакатоне он за ночь освоил инструмент, с которым никогда не работал. Вот это называется быстрое обучение.",
+    by: "Лена, капитан команды",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Lena&backgroundColor=f97316&textColor=ffffff",
   },
   {
     tempId: 9,
     testimonial:
-      "Программы в клубе невероятные. Я прошла путь от скованности и боли в спине до лёгкости и гибкости всего за несколько месяцев.",
-    by: "Михаил Волков, йога-терапия",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MikhailVolkov&backgroundColor=84cc16&textColor=ffffff",
+      "Он честен с собой. Не притворяется, что знает больше, чем знает — и именно поэтому растёт быстрее многих.",
+    by: "Павел, старший разработчик",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Pavel&backgroundColor=84cc16&textColor=ffffff",
   },
   {
     tempId: 10,
     testimonial:
-      "Люблю «Дыши и Властвуй» за разнообразие. Люди всех возрастов и уровней объединяются одним желанием — жить осознанно и в гармонии с собой.",
-    by: "София Родригес, йога для всех",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SofiaRodriguez&backgroundColor=a855f7&textColor=ffffff",
+      "Видно, что программирование для него — не просто работа в будущем, а настоящее увлечение. Такие люди становятся хорошими разработчиками.",
+    by: "Наташа, ментор",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Natasha&backgroundColor=a855f7&textColor=ffffff",
   },
   {
     tempId: 11,
     testimonial:
-      "Дисциплина приходит сама, когда знаешь, что твоя йога-семья ждёт тебя. Пропустить занятие? Это уже не хочется.",
-    by: "Тимур Асланов, регулярная практика",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=TimurAslanov&backgroundColor=059669&textColor=ffffff",
+      "Он не боится задавать «глупые» вопросы. А именно из таких вопросов и рождается настоящее понимание.",
+    by: "Рустам, однокурсник",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Rustam&backgroundColor=059669&textColor=ffffff",
   },
   {
     tempId: 12,
     testimonial:
-      "Йога-ретриты с клубом открыли мне самые красивые уголки природы. Практика стала моим способом исследовать мир.",
-    by: "Нина Павлова, йога и путешествия",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NinaPavlova&backgroundColor=0ea5e9&textColor=ffffff",
+      "Олег следит за трендами, читает документацию, смотрит доклады. Это не каждый делает добровольно — а он делает.",
+    by: "Нина, участница сообщества",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Nina&backgroundColor=0ea5e9&textColor=ffffff",
   },
   {
     tempId: 13,
     testimonial:
-      "Разговоры после занятий ценны не меньше самой практики. Мы обсуждаем жизнь, делимся открытиями и растём вместе.",
-    by: "Роман Ким, философия йоги",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RomanKim&backgroundColor=dc2626&textColor=ffffff",
+      "Мы обсуждали архитектуру проекта — и я был удивлён глубиной его вопросов для человека с таким небольшим опытом.",
+    by: "Роман, тимлид",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Roman&backgroundColor=dc2626&textColor=ffffff",
   },
   {
     tempId: 14,
     testimonial:
-      "Я никогда не думала, что йога — это для меня, но дружелюбный подход клуба изменил всё. Теперь не представляю жизни без практики.",
-    by: "Екатерина Орлова, позднее начало",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=EkaterinaOrlova&backgroundColor=7c3aed&textColor=ffffff",
+      "Он делает код аккуратно. Не ради перфекционизма, а потому что понимает: читаемый код — это уважение к другим.",
+    by: "Екатерина, ревьюер",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Ekaterina&backgroundColor=7c3aed&textColor=ffffff",
   },
   {
     tempId: 15,
     testimonial:
-      "Поддержка при восстановлении от травмы потрясающая. Клуб помог мне вернуться к практике мягко и безопасно — я стала только сильнее.",
-    by: "Даниил Пак, восстановительная йога",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DaniilPak&backgroundColor=ea580c&textColor=ffffff",
+      "После фидбека он не обижается — анализирует и исправляет. Это профессиональный подход, который редко встретишь у начинающих.",
+    by: "Данила, участник code-review",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Danila&backgroundColor=ea580c&textColor=ffffff",
   },
   {
     tempId: 16,
     testimonial:
-      "Благотворительные занятия клуба придают практике особый смысл. Мы занимаемся не только для себя — мы делаем мир добрее.",
-    by: "Раиса Грин, йога с сердцем",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RaisaGrin&backgroundColor=16a34a&textColor=ffffff",
+      "Олег помогает другим в учебном чате — хотя сам ещё учится. Это говорит о характере.",
+    by: "Рая, участница курса",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Raya&backgroundColor=16a34a&textColor=ffffff",
   },
   {
     tempId: 17,
     testimonial:
-      "Мастер-классы по технике дыхания преобразили мою практику. Пранаяма открыла возможности, о которых я не подозревала.",
-    by: "Кирилл Вонг, пранаяма и медитация",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=KirillVong&backgroundColor=2563eb&textColor=ffffff",
+      "Видел его коммиты в учебном репозитории — каждый день, без пропусков, две недели подряд. Это дисциплина.",
+    by: "Кирилл, однокурсник",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Kirill&backgroundColor=2563eb&textColor=ffffff",
   },
   {
     tempId: 18,
     testimonial:
-      "Онлайн-занятия клуба спасли меня в период стресса. Даже дистанционно я чувствую поддержку и тепло всего сообщества.",
-    by: "Александра Фостер, онлайн-практика",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexandraFoster&backgroundColor=be185d&textColor=ffffff",
+      "Он не боится начинать проект с нуля, если понял, что первый подход был неверным. Это зрелость, которой многим не хватает.",
+    by: "Александр, наставник",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Alexander&backgroundColor=be185d&textColor=ffffff",
   },
   {
     tempId: 19,
     testimonial:
-      "Наставничество в клубе меняет жизни. Опытные практики берут новичков под крыло и щедро делятся своей мудростью без осуждения.",
-    by: "Карлос Мендес, благодарный ученик",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=CarlosMendez&backgroundColor=0891b2&textColor=ffffff",
+      "Работать с Олегом будет интересно любой команде. Он приносит энергию, желание учиться и честность — а это ценнее любых навыков.",
+    by: "Карина, HR в IT-компании",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Karina&backgroundColor=0891b2&textColor=ffffff",
   },
 ]
 
