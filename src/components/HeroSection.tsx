@@ -6,10 +6,10 @@ export default function HeroSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: "Обо мне", href: "#mission" },
-    { name: "Путь", href: "#community" },
+    { name: "О клубе", href: "#mission" },
+    { name: "Практики", href: "#community" },
     { name: "Отзывы", href: "#testimonials" },
-    { name: "Связаться", href: "#join" },
+    { name: "Вступить", href: "#join" },
   ]
 
   const scrollToSection = (href: string) => {
@@ -26,7 +26,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://cdn.poehali.dev/projects/03d7716a-3301-4f8a-8434-cd5be43d8e71/files/0d460179-73ee-4b44-9bd8-ee35ccaeb6dd.jpg')`,
+          backgroundImage: `url('https://cdn.poehali.dev/projects/03d7716a-3301-4f8a-8434-cd5be43d8e71/files/70d35895-0448-467d-b563-34d57f19196e.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-black/55" />
@@ -34,7 +34,7 @@ export default function HeroSection() {
 
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
-        <div className="text-white font-bold text-xl tracking-wider">OLEG.DEV</div>
+        <div className="text-white font-bold text-xl tracking-wider">ДЫШИ И ВЛАСТВУЙ</div>
 
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
@@ -77,17 +77,15 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="text-center text-white max-w-4xl">
-          <p className="text-sm md:text-base font-medium tracking-[0.3em] text-blue-400 uppercase mb-4">Начинающий разработчик</p>
+          <p className="text-sm md:text-base font-medium tracking-[0.3em] text-amber-300 uppercase mb-4">Йога-клуб · Москва</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">
-            ОЛЕГ
+            ДЫШИ
             <br />
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300 bg-clip-text text-transparent">
-              ПРОГРАММИСТ
-            </span>
+            И ВЛАСТВУЙ
           </h1>
 
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-300">
-            Учусь каждый день · Строю своё будущее в коде
+          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">
+            Тело. Дыхание. Внутренняя сила.
           </p>
 
           <LiquidButton
@@ -95,7 +93,7 @@ export default function HeroSection() {
             className="font-semibold text-lg tracking-wide"
             onClick={() => scrollToSection("#join")}
           >
-            Связаться со мной
+            Начать практику
           </LiquidButton>
         </div>
       </div>
